@@ -11,6 +11,12 @@ function workThatTakesTime(duration) {
 }
 
 
+app.get('/fast', (req, res) => {
+    res.send('fast page')
+
+});
+
+
 app.get('/', (req, res) => {
     workThatTakesTime(5000);
     res.send('welcome')
